@@ -58,15 +58,23 @@
 #### 2.2. Время в ms от начала навигация до событий FP, FCP, LCP, DCL и Load
 
 - First Paint (FP) - 847.6 ms
+
   ![FP](./images/Screenshot_12.png)
+  
 - First Contentful Paint (FCP) - 847.6 ms
+
   ![FCP](./images/Screenshot_13.png)
 
 - Largest Contentful Paint (LCP) - 7149.9 ms
+
   ![LCP](./images/Screenshot_14.png)
+  
 - DOM Content Loaded (DCL) - 6701.3 ms
+
   ![DCL](./images/Screenshot_15.png)
+  
 - Load - 31285.4 ms
+
   ![Load](./images/Screenshot_16.png)
 
 #### 2.3. DOM-элемент на котором происходит LCP
@@ -81,6 +89,7 @@
 - Scripting - 8320 ms
 - Rendering - 224 ms
 - Painting - 1039 ms
+
   ![AllTime](./images/Screenshot_18.png)
 
 ---
