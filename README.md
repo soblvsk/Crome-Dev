@@ -2,7 +2,7 @@
 
 ### 1. На вкладке Network
 
-#### 1.1. Профиль загрузки ресурсов [HAR](./www.gd.ru.har)
+#### 1.1. Профиль загрузки ресурсов [HAR](./files/www.gd.ru.har)
 
 #### 1.2. Неоптимальные места:
 
@@ -51,19 +51,41 @@
 
 ---
 
-### 2.
+### 2. На вкладке Perfomance
 
-#### 2.1.
+#### 2.1. Профиль загрузки страницы [JSON](./files/Trace-20230616T145622.json)
 
-#### 2.2.
+#### 2.2. Время в ms от начала навигация до событий FP, FCP, LCP, DCL и Load
 
-#### 2.3.
+- First Paint (FP) - 847.6 ms
+  ![FP](./images/Screenshot_12.png)
+- First Contentful Paint (FCP) - 847.6 ms
+  ![FCP](./images/Screenshot_13.png)
 
-#### 2.4.
+- Largest Contentful Paint (LCP) - 7149.9 ms
+  ![LCP](./images/Screenshot_14.png)
+- DOM Content Loaded (DCL) - 6701.3 ms
+  ![DCL](./images/Screenshot_15.png)
+- Load - 31285.4 ms
+  ![Load](./images/Screenshot_16.png)
+
+#### 2.3. DOM-элемент на котором происходит LCP
+
+- `<img loading="lazy" src="/images/branding/10/imageTop_1628667062.7856.jpg" data-url="/images/branding/10/imageTop_1628667062.7856.jpg" alt="-">`
+
+![DOM](./images/Screenshot_17.png)
+
+#### 2.4. Время в ms тратится на разные этапы обработки документа (Loading, Scripting, Rendering, Painting)
+
+- Loading - 198 ms
+- Scripting - 8320 ms
+- Rendering - 224 ms
+- Painting - 1039 ms
+  ![AllTime](./images/Screenshot_18.png)
 
 ---
 
-### 3.
+### 3. на вкладке Coverage
 
 #### 3.1.
 
