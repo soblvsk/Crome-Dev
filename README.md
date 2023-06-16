@@ -126,7 +126,7 @@
 
 ### 2. На вкладке Perfomance
 
-#### 2.1. Профиль загрузки страницы [JSON](./additionally/files/Trace-20230616T162727.json)
+#### 2.1. Профиль загрузки страницы [JSON](./additionally/files/Trace-20230616T162727.zip)
 
 #### 2.2. Время в ms от начала навигация до событий FP, FCP, LCP, DCL и Load
 
