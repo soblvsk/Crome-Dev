@@ -60,7 +60,7 @@
 - First Paint (FP) - 847.6 ms
 
   ![FP](./images/Screenshot_12.png)
-  
+
 - First Contentful Paint (FCP) - 847.6 ms
 
   ![FCP](./images/Screenshot_13.png)
@@ -68,11 +68,11 @@
 - Largest Contentful Paint (LCP) - 7149.9 ms
 
   ![LCP](./images/Screenshot_14.png)
-  
+
 - DOM Content Loaded (DCL) - 6701.3 ms
 
   ![DCL](./images/Screenshot_15.png)
-  
+
 - Load - 31285.4 ms
 
   ![Load](./images/Screenshot_16.png)
@@ -109,3 +109,70 @@
 
 - 2600 kB
   ![js](./images/Screenshot_21.png)
+
+---
+
+# Дополнительно
+
+### 1. На вкладке Network
+
+Профиль загрузки ресурсов [HAR](./additionally/files/www.gd.ru.har)
+
+- Аналогично как в основном задании Network, только загрузка стала больше почти в 2 раза.
+
+![Network](./additionally/images/Screenshot_0.png)
+
+---
+
+### 2. На вкладке Perfomance
+
+#### 2.1. Профиль загрузки страницы [JSON](./additionally/files/Trace-20230616T162727.json)
+
+#### 2.2. Время в ms от начала навигация до событий FP, FCP, LCP, DCL и Load
+
+- First Paint (FP) - 9855.1 ms
+
+  ![FP](./additionally/images/Screenshot_1.png)
+
+- First Contentful Paint (FCP) - 9855.1 ms
+
+  ![FCP](./additionally/images/Screenshot_2.png)
+
+- Largest Contentful Paint (LCP) - 43342.0 ms
+
+  ![LCP](./additionally/images/Screenshot_3.png)
+
+- DOM Content Loaded (DCL) - 37609.9 ms
+
+  ![DCL](./additionally/images/Screenshot_4.png)
+
+- Load - 71684.7 ms
+
+  ![Load](./additionally/images/Screenshot_5.png)
+
+#### 2.3. DOM-элемент на котором происходит LCP
+
+- `<img loading="lazy" src="/images/branding/10/imageTop_1628667062.7856.jpg" data-url="/images/branding/10/imageTop_1628667062.7856.jpg" alt="-">`
+
+![DOM](./additionally/images/Screenshot_6.png)
+
+#### 2.4. Время в ms тратится на разные этапы обработки документа (Loading, Scripting, Rendering, Painting)
+
+- Loading - 676 ms
+- Scripting - 18506 ms
+- Rendering - 18904 ms
+- Painting - 6455 ms
+
+  ![AllTime](./additionally/images/Screenshot_7.png)
+
+---
+
+### 3. На вкладке Coverage
+
+#### 3.1. Профиль загрузки страницы [JSON](./additionally/files/Coverage-20230616T164526.json)
+
+![Coverage](./additionally/images/Screenshot_8.png)
+
+#### 3.2. Объём неиспользованного CSS в ходе загрузки страницы
+
+Аналогично как в основном задании Coverage. Сайт не оптимизирован под плохую связь Slow 3G и CPU 4x slowdown. Из-за этого все сильно тормозит и невозможно взаимодействовать с сайтом.
