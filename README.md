@@ -1,4 +1,4 @@
-# Crome-Dev
+# Tooling (Тулинг)
 
 ### 1. На вкладке Network
 
