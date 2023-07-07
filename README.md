@@ -1,4 +1,4 @@
-# Tooling (Тулинг)
+# Tooling (Использование Chrome DevTools - анализ открытия сайта)
 
 ### 1. На вкладке Network
 
